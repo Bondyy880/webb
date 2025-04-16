@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    background: linear-gradient(to right, #1e1e1e, #2b2b2b);
+    color: #f0f0f0;
+    line-height: 1.6;
+  }
+  
+  nav {
+    background-color: #111;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  nav h2 {
+    color: #ff6b81;
+    text-align: center;
+    font-size: 24px;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin-top: 40px;
+  }
+  
+  nav ul li {
+    margin: 20px 0;
+  }
+  
+  nav ul li a {
+    color: #f0f0f0;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    border-radius: 8px;
+    transition: 1.3s;
+  }
+  
+  nav ul li a:hover {
+    background-color: #ff6b81;
+    color: #111;
+    transform: scale(1.1);
+  }
+  
+  .main {
+    margin-left: 260px;
+    padding: 40px;
+  }
+  
+  .hero {
+    background-color: #333;
+    border-radius: 12px;
+    padding: 60px;
+    color: white;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .hero h1 {
+    font-size: 48px;
+  }
+  
+  .hero p {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  
+  .btn {
+    background-color: #ff6b81;
+    border: none;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #ff8a9b;
+  }
+  
+  section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    border-left: 4px solid #ff6b81;
+    padding-left: 10px;
+  }
+  
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+  
+  .card {
+    background-color: #2e2e2e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card h3 {
+    color: #ff6b81;
+    margin-bottom: 10px;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #111;
+    color: #777;
+    margin-top: 40px;
+  }
+  
+  /* Responsif untuk layar dengan lebar maksimal 768px (tablet dan mobile) */
+  @media (max-width: 768px) {
+    nav {
+      width: 100%; /* Ubah lebar navigasi menjadi 100% */
+      height: auto; /* Ubah tinggi navigasi agar tidak mengganggu layout */
+    }
+  
+    .main {
+      margin-left: 0; /* Hapus margin kiri pada bagian main */
+      padding: 20px; /* Kurangi padding di bagian main untuk memberi ruang lebih */
+    }
+  
+    .hero {
+      padding: 30px; /* Kurangi padding pada hero untuk menghemat ruang */
+    }
+  
+    .hero h1 {
+      font-size: 36px; /* Sesuaikan ukuran font pada hero */
+    }
+  
+    .hero p {
+      font-size: 18px; /* Sesuaikan ukuran font deskripsi */
+    }
+  
+    .btn {
+      padding: 10px 20px; /* Sesuaikan ukuran tombol pada layar kecil */
+    }
+  
+    section h2 {
+      font-size: 24px; /* Sesuaikan ukuran judul pada section */
+    }
+  
+    .cards {
+      grid-template-columns: 1fr; /* Tampilan satu kolom untuk kartu di perangkat mobile */
+    }
+  
+    .card img {
+      height: 150px; /* Sesuaikan tinggi gambar pada kartu */
+    }
+  
+    footer {
+      font-size: 14px; /* Sesuaikan ukuran font footer untuk perangkat kecil */
+    }
+  }
+  
